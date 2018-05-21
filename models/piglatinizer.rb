@@ -4,7 +4,11 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-    "#{word[1..-1]}#{word[0]}ay"
+    if (word[0] == /[aeoui]/)
+      "#{word}way"
+    else
+      "#{word[1..-1]}#{word[0]}ay"
+    end
   end
 
 end
