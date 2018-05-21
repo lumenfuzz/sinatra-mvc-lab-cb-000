@@ -4,7 +4,8 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-    if ("#{word[0]}".include? /[aeiou]/)
+    letter = "#{word[0]}"
+    if (letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u")
       "#{word}way"
     else
       "#{word[1..-1]}#{word[0]}ay"
