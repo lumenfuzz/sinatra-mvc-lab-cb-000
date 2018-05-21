@@ -1,3 +1,4 @@
+require "pry"
 class PigLatinizer
 
   def initialize
@@ -5,6 +6,7 @@ class PigLatinizer
 
   def piglatinize(word)
     letter = "#{word[0]}"
+    binding.pry
     if (letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u")
       "#{word}way"
     else
