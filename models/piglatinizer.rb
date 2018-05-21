@@ -4,7 +4,7 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-    "#{word[1..-1]}#{word[0]ay}"
+    "#{word[1..-1]}#{word[0]}ay"
   end
 
 end
