@@ -7,7 +7,7 @@ class PigLatinizer
     if ("#{word[0]}" =~ /[aeoui]/)
       "#{word}way"
     else
-      "#{word[1..-1]}#{word[0]}ay"
+      "#{word[1..-1]}#{word[0]}way"
     end
   end
 
